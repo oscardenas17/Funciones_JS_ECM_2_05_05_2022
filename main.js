@@ -1,30 +1,12 @@
-function Saludar(lista) {
-    let {nombre, dirrecion, edad, ...DatosSobrantes} = lista;
-    lista = undefined;
+// http://www.etnassoft.com/2016/06/22/las-funciones-flecha-en-javascript-parte-1/
+// Funciones Flecha
+// ()=>{}; 
+
+let fnA = (saludo) => {
+    return `Hola ${saludo} como estas`;
 }
-
-Saludar({nombre:'Miguel', dirrecion:"Calle 11b", altura: 1.6});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function Saludar(nombre, apellido, edad) {
-//     this.non = nombre;
-//     this.ape = apellido;
-//     this.eda = edad;
-//     nombre = undefined; apellido= undefined; edad = undefined;
-//     console.log(`Hola ${nombre} como estas`);
-// }
-
-// Saludar.call(this, 'Miguel', "Castro", 24);
-// let obj = new Saludar('Miguel', "Castro", 24);
+let fnB = saludo => {
+    return `Hola ${saludo} como estas`;
+}
+let fnC = saludo => `Hola ${saludo} como estas`;
+let fnD = (saludo) => `Hola ${saludo} como estas`;
